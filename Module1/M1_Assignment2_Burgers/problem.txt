@@ -1,0 +1,106 @@
+Assignment: Monterey Jack & Jill Burgers
+
+In this assignment, you will demonstrate how to write a class that uses enums.
+
+Jack and Jill are building a custom gormet burger restaruant. You will create a program that allows a user to customize one of Jack and Jill's burgers. You will create a burger class that matches the UML diagram above. This class will be unit tested which means that you must match the specification in the diagram exactly.
+
+To create the burgers properly you must first create several enumerations. The tables below map the enum values to their output strings. The table rows are in the enum value order.
+
+proteinType to string and double mapping
+Enum Value	Output String	Price Per Patty
+BEEF	Beef	3.5
+TURKEY	Turkey	4
+CHICKEN	Chicken Breast	4
+MUSH	Portabella Mushroom	4.5
+VEGGIE	Veggie	4.5
+Download M01 Part B Programming Assignment 1 Starter.zip
+
+condimentType to string mapping
+Enum Value	String
+KETCHUP	Ketchup
+MUSTARD	Mustard
+MAYO	Mayonnaise
+SPECIAL	Special Sauce
+BBQ	BBQ Sauce
+STEAK	Steak Sauce
+PEPPERCORN	Peppercorn Ranch
+NOCOND	None
+
+
+toppingType to string mapping
+Enum Value	String
+GRILLONION	Grilled Onion
+RAWONION	Raw Onion
+TOMATO	Tomato
+LETTUCE	Lettuce
+BACON	Bacon
+MUSHROOM	Grilled Mushroom
+PICKLE	Pickle
+NOTOP	None
+
+
+bunType to string mapping
+Enum Value	String
+BRIOCHE	Brioche
+WHEAT	Wheat
+SESAME	Sesame
+ONION	Onion
+RYE	Rye Bread
+NOBUN	None
+GLUTENFREE	Gluten Free
+
+
+cheeseType to string mapping
+Enum Value	String
+CHEDDAR	Cheddar
+AMERICAN	American
+PEPPERJACK	Pepper Jack
+SWISS	Swiss
+COLBYJACK	Colby Jack
+NOCHEESE	None
+
+
+The burger class has the following private members
+
+
+
+proteinType protein;
+condimentType condiments[7];
+toppingType toppings[7];
+bunType bun;
+cheeseType cheese;
+int numPatties;
+bool isVeg;
+int numCondiments;
+int numToppings;
+The burger class has the following public functions and constructor
+
+Constructor
+burger(proteinType protein, condimentType condemints[], int numCondiments, toppingType toppings[], int numToppings, bunType bun, cheeseType cheese, int numPatties);
+Getters
+proteinType getProtein() const;
+std::string getCondiments() const;
+std::string getToppings() const;
+bunType getBun() const;
+cheeseType getCheese() const;
+bool isVeg() const;
+int getNumPatties() const;
+double getPrice() const;
+Setters
+void setProtein(proteinType);
+void setCondiments(condimentType[], int);
+void setToppings(toppingType[], int);
+void setBun(bunType);
+void setCheese(cheeseType);
+void setNumPatties(int);
+Other
+std::string tostring();
+A burger will be classified as vegetarian if the burger patty is set to MUSH or VEGGIE, and BACON is not one of the toppings.
+
+For the price function, you will follow the following algorithm.
+
+Use the price per patty found in the enum mapping table above to calculate the price for the protein (multiply by the number of patties).
+Add $0.50 for each topping
+Add $0.25 for each condiment
+Add $0.10 if they have cheese
+For the main program you will create a simple menu program that will allow a user to order a custom burger. The program will let the user choose their protein and number of patties. It will let them specify their bun, cheese, condiments, and toppings. After everything has been chosen the burger will be displayed to the user and they will have the option to make changes. If the customer would make a change that would cause a burger to no longer be classified as vegetarian, they should be warned about the change and forced to confirm that they want to proceed. After the user has finished making changes the final burger will be displayed and the program will exit. This program will be IO tested in CodeGrade. That means that the output of the program must match the sample below exactly to pass the test. Programs with minor differences in the output that cause the tests to fail will be awarded points at the instructor's discretion.

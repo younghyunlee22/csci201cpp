@@ -1,0 +1,274 @@
+input
+1
+3
+4
+5
+7
+-1
+7
+-1
+1
+1
+7
+
+output
+How many patties do you want on your burger?
+Please choose a protein from the list.
+1: Beef
+2: Turkey
+3: Chicken Breast
+4: Portabella Mushroom
+5: Veggie
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a condiment from the list. Enter -1 to stop adding condiments.
+1: Ketchup
+2: Mustard
+3: Mayonnaise
+4: Special Sauce
+5: BBQ Sauce
+6: Steak Sauce
+7: Peppercorn Ranch
+8: None
+
+Please choose a condiment from the list. Enter -1 to stop adding condiments.
+1: Ketchup
+2: Mustard
+3: Mayonnaise
+4: Special Sauce
+5: BBQ Sauce
+6: Steak Sauce
+7: Peppercorn Ranch
+8: None
+
+Please choose a bun from the list.
+1: Brioche
+2: Wheat
+3: Seasme
+4: Onion
+5: Rye Bread
+6: None
+7: Gluten Free
+
+Please choose a cheese from the list.
+1: Cheddar
+2: American
+3: Pepper Jack
+4: Swiss
+5: Colby Jack
+6: None
+
+Protein: Chicken Breast
+Number of patties: 1
+Bun Type: Brioche
+Cheese: Cheddar
+Condiments: Peppercorn Ranch
+Toppings: Lettuce, Bacon, Pickle
+
+Would you like to change the burger? Please choose from the menu.
+1. Change Protein
+2. Change Number of Patties
+3. Change Toppings
+4. Change Cheese
+5. Change Bun
+6. Change Condiments
+7. No Changes
+
+Protein: Chicken Breast
+Number of patties: 1
+Bun Type: Brioche
+Cheese: Cheddar
+Condiments: Peppercorn Ranch
+Toppings: Lettuce, Bacon, Pickle
+
+
+input
+1
+5
+4
+7
+-1
+1
+2
+-1
+1
+1
+1
+2
+n
+7
+
+user - first choice: veggie burger
+program - ask user if they want to change the burger before ordering
+user - chose to change the burger
+program - ask user to choose from the change menu
+user - chose to change the protein to meat based
+program - warn user that the burger is no longer vegetarian and ask if they want to continue (y/n)
+if yes, continue with the next choice
+if no, ask user if they want to change the burger before ordering
+
+How many patties do you want on your burger?
+Please choose a protein from the list.
+1: Beef
+2: Turkey
+3: Chicken Breast
+4: Portabella Mushroom
+5: Veggie
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a topping from the list. Enter -1 to stop adding toppings.
+1: Grilled Onion
+2: Raw Onion
+3: Tomato
+4: Lettuce
+5: Bacon
+6: Grilled Mushroom
+7: Pickle
+8: None
+
+Please choose a condiment from the list. Enter -1 to stop adding condiments.
+1: Ketchup
+2: Mustard
+3: Mayonnaise
+4: Special Sauce
+5: BBQ Sauce
+6: Steak Sauce
+7: Peppercorn Ranch
+8: None
+
+Please choose a condiment from the list. Enter -1 to stop adding condiments.
+1: Ketchup
+2: Mustard
+3: Mayonnaise
+4: Special Sauce
+5: BBQ Sauce
+6: Steak Sauce
+7: Peppercorn Ranch
+8: None
+
+Please choose a condiment from the list. Enter -1 to stop adding condiments.
+1: Ketchup
+2: Mustard
+3: Mayonnaise
+4: Special Sauce
+5: BBQ Sauce
+6: Steak Sauce
+7: Peppercorn Ranch
+8: None
+
+Please choose a bun from the list.
+1: Brioche
+2: Wheat
+3: Seasme
+4: Onion
+5: Rye Bread
+6: None
+7: Gluten Free
+
+Please choose a cheese from the list.
+1: Cheddar
+2: American
+3: Pepper Jack
+4: Swiss
+5: Colby Jack
+6: None
+
+Protein: Veggie
+Number of patties: 1
+Bun Type: Brioche
+Cheese: Cheddar
+Condiments: Ketchup, Mustard
+Toppings: Lettuce, Pickle
+This is a vegetarian burger.
+
+Would you like to change the burger? Please choose from the menu.
+1. Change Protein
+2. Change Number of Patties
+3. Change Toppings
+4. Change Cheese
+5. Change Bun
+6. Change Condiments
+7. No Changes
+
+Please choose a protein from the list.
+1: Beef
+2: Turkey
+3: Chicken Breast
+4: Portabella Mushroom
+5: Veggie
+
+Warning you are changing the burger from vegetarian to meat based. Do you want to continue?
+Would you like to change the burger? Please choose from the menu.
+1. Change Protein
+2. Change Number of Patties
+3. Change Toppings
+4. Change Cheese
+5. Change Bun
+6. Change Condiments
+7. No Changes
+
+Protein: Veggie
+Number of patties: 1
+Bun Type: Brioche
+Cheese: Cheddar
+Condiments: Ketchup, Mustard
+Toppings: Lettuce, Pickle
+This is a vegetarian burger.

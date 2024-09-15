@@ -1,0 +1,10 @@
+**/.vscode/
+**/.idea/
+**/.DS_Store/
+
+burgers_flowChart.png
+burgers_with_common.zip
+
+**/cmake-build-debug/
+
+practice/
