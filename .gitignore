@@ -6,5 +6,6 @@ burgers_flowChart.png
 burgers_with_common.zip
 
 **/cmake-build-debug/
+**/build/
 
 practice/
