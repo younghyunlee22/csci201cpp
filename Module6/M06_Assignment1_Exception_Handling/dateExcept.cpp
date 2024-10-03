@@ -1,6 +1,8 @@
-//
-// Created by Younghyun Lee on 10/2/24.
-//
+/* Program name: dateExcept.cpp
+* Author: Younghyun Lee
+* Date last updated: 10/2/2024
+* Purpose: Create Date Exception classes
+*/
 
 #include "dateExcept.h"
 

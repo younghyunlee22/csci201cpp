@@ -1,0 +1,5 @@
+For this assignment, you will modify the date class from M04 Programming Assignment 2. You will create 3 custom exception classes that are derived from std::invalid_argument. The first is invalid_month, the second is invalid_day, and the third is invalid_year. You will need to change the constructor, setters and input operator so if there is invalid data received they throw the apporpriate exception. The class should no longer print an error message with invalid data.
+
+This class will be unit tested. There will be no IO tests, and you will not need to write a main program except for your own testing purposes. To ensure your class can be unit tested, the class name and all function names must match the UML diagram in spelling and case. In addition the function signatures must match the UML diagram.
+
+You will need to modify your previous date.h and date.cpp. You will need to create dateExcept.h and dateExcept.cpp. The makefile in the starter code can be used to compile your class with a main.cpp.

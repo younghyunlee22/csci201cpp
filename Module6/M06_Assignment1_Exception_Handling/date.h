@@ -1,7 +1,7 @@
-/* Program name: date.cpp
+/* Program name: date.h
 * Author: Younghyun Lee
 * Date last updated: 10/2/2024
-* Purpose: Create Date class
+* Purpose: Create Date classes
 */
 #ifndef DATE_H
 #define DATE_H
@@ -58,7 +58,7 @@ private:
     int year;
 
     // Helper methods
-    void isValidDate(int month, int day, int year);
+    void validateUserDate(int month, int day, int year);
     bool isLeapYearHelper(int year);
     void incrementDate();
     void decrementDate();

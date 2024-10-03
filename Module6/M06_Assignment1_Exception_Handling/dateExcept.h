@@ -1,6 +1,8 @@
-//
-// Created by Younghyun Lee on 10/2/24.
-//
+/* Program name: dateExcept.h
+* Author: Younghyun Lee
+* Date last updated: 10/2/2024
+* Purpose: Create Date Exception classes
+*/
 
 #ifndef DATEEXCEPT_H
 #define DATEEXCEPT_H
@@ -14,7 +16,7 @@
 class invalid_month : public std::invalid_argument {
 public:
     // Constructor
-    invalid_month(const std::string& message);
+    explicit invalid_month(const std::string& message);
 };
 
 // Exception for invalid day
@@ -28,7 +30,7 @@ public:
 class invalid_year : public std::invalid_argument {
 public:
     // Constructor
-    invalid_year(const std::string& message);
+    explicit invalid_year(const std::string& message);
 };
 
 #endif //DATEEXCEPT_H

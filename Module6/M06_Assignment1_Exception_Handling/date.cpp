@@ -41,7 +41,7 @@ int date::daysInMonth(int month, int year) {
     }
 }
 
-void date::isValidDate(int month, int day, int year) {
+void date::validateUserDate(int month, int day, int year) {
     if (year < 0) {
         throw invalid_year("Year cannot be negative.");
     }
@@ -59,7 +59,7 @@ void date::isValidDate(int month, int day, int year) {
 // Constructor
 date::date(int month, int day, int year)
 {
-    isValidDate(month, day, year);
+    validateUserDate(month, day, year);
 
     this -> month = month;
     this -> day = day;
@@ -84,18 +84,18 @@ int date::getYear() const
 
 // Setters
 void date::setDay(int day) {
-    isValidDate(month, day, year);
+    validateUserDate(month, day, year);
     this->day = day;
 }
 
 void date::setMonth(int month) {
-    isValidDate(month, day, year);
+    validateUserDate(month, day, year);
     this -> month = month;
 }
 
 void date::setYear(int year)
 {
-    isValidDate(month, day, year);
+    validateUserDate(month, day, year);
     this -> year = year;
 }
 
@@ -226,15 +226,27 @@ date& operator-(int daysToSub, date& subFromDate) {
 
 istream& operator>>(istream& in, date& dateToFill) {
     // read three numbers from the input stream
-    // int month, day, year;
-    // in >> month >> day >> year;
-    // if (!dateToFill.isValidDate(month, day, year)) {
-    //     cout << "Invalid date input." << endl;
-    // } else {
-    //     dateToFill.month = month;
-    //     dateToFill.day = day;
-    //     dateToFill.year = year;
-    // }
+    int month, day, year;
+    in >> month >> day >> year;
+
+    try {
+        dateToFill.validateUserDate(month, day, year);
+        dateToFill.month = month;
+        dateToFill.day = day;
+        dateToFill.year = year;
+    }
+    catch (const invalid_day& e) {
+        std::cerr << e.what() << std::endl;
+        in.setstate(std::ios::failbit);  // set the stream state to fail
+    }
+    catch (const invalid_month& e) {
+        std::cerr << e.what() << std::endl;
+        in.setstate(std::ios::failbit);
+    }
+    catch (const invalid_year& e) {
+        std::cerr << e.what() << std::endl;
+        in.setstate(std::ios::failbit);
+    }
     return in;
 }
 
