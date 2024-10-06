@@ -1,0 +1,31 @@
+M4
+Assignment: RPG Characters part 2
+For this assignment you utilize the character classes you created in M02 Programming Assignment. You will start by adding a virtual tostring function to each of the classes. Each class should display a character starting with the character's name followed by the character class. Then each of the character's stats will be displayed.
+
+You will create a dynamic array of characters in your main. You will need to use a double pointer for this. You will start by asking the user how many characters they want to create. Set up an array of characters. Next for each character prompt the user for the character's name and which class they want to be. Create the character using the correct derived class constructor and store in the array you created.
+
+After all the characters have been created, loop through the array and display each character in the party.
+
+----
+For this assignment you will practice inheritance by creating an inheritance hierarchy of RPG character classes. The base class will be called character and will have protected attributes for name, hp, mp, sthength, dexterity, intelligence, speed, endurance, and faith. It will also have functionality that represents a basic attack. The basic attack uses the character's strength stat to determine the amount of damage. The base class will have getters and setters for all attributes and a parameterized constructor.
+
+There will be four derived classes fighter, rogue, magician, and cleric. The derived class will determine the starting values for the attributes in the base class and each derived class has unique functionality.
+
+The fighter has strongAttack which combines their strength and endurance stats to determine the amount of the attack.
+
+The rogue has a steal ability which will steal from an enemy's hp and add to their own hp. The amount added to their hp is based on their dexterity, speed and intelligence, and adds a random amount between 10% and 50% of the value of those combined stats. To get a random amount use rand() in cstdlib (do not seed), and generate a number between 10 and 50. Then take the number generated and divide by 100.0 to get the percent to use in the calculation.
+
+The magician has a cast ability which allows them to cast magic that attacks the opponent based on their intellgence and speed. It consumes mp.
+
+The cleric has the ability to heal which heals an ally based on the cleric's faith stat. Healing consumes MP.
+
+The table below has the starting stats for each dervied class.
+
+Character Class Starting Stats
+Character Class	Starting HP	Starting MP	Starting Strength	Starting Dexterity	Starting Intelligence	Starting Speed	Starting Endurance	Starting Faith
+Fighter	300	0	16	10	5	8	15	5
+Rogue	200	0	10	16	16	15	8	5
+Magician	250	200	5	10	16	16	5	8
+Cleric	200	200	5	10	8	16	5	16
+For the main of this program, you will create 1 character of each derived type. You will prompt the user for the character name for each character created. You will also demonstrate the ability of each of the derived classes by calling their special ability function. You will use the tostring function in each derived class to display the stats before and after the ability has been called.
+
