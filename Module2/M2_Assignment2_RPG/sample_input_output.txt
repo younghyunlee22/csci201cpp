@@ -1,0 +1,146 @@
+input
+Snowball the White
+Evey the Grey
+Molly the Brown
+Oscar the Orange
+
+output
+What is your fighter's name: 
+What is your rogue's name: 
+What is your magician's name: 
+What is your cleric's name: 
+Testing
+Fighter Starting Stats
+Snowball the White stats:
+HP: 300.00
+MP: 0.00
+Strength: 16
+Dexterity: 10
+Intelligence: 5
+Speed: 8
+Endurance: 15
+Faith: 5
+
+
+Rogue Starting Stats
+Evey the Grey stats:
+HP: 200.00
+MP: 0.00
+Strength: 10
+Dexterity: 16
+Intelligence: 16
+Speed: 15
+Endurance: 8
+Faith: 5
+
+
+Snowball the White Strong Attack Evey the Grey
+Updated Rogue Stats
+Evey the Grey stats:
+HP: 169.00
+MP: 0.00
+Strength: 10
+Dexterity: 16
+Intelligence: 16
+Speed: 15
+Endurance: 8
+Faith: 5
+
+
+Evey the Grey Steal Snowball the White
+Updated Rogue Stats
+Evey the Grey stats:
+HP: 176.05
+MP: 0.00
+Strength: 10
+Dexterity: 16
+Intelligence: 16
+Speed: 15
+Endurance: 8
+Faith: 5
+
+
+Updated Fighter Stats
+Snowball the White stats:
+HP: 292.95
+MP: 0.00
+Strength: 16
+Dexterity: 10
+Intelligence: 5
+Speed: 8
+Endurance: 15
+Faith: 5
+
+
+Magician Starting Stats
+Molly the Brown stats:
+HP: 250.00
+MP: 200.00
+Strength: 5
+Dexterity: 10
+Intelligence: 16
+Speed: 16
+Endurance: 5
+Faith: 8
+
+
+Molly the Brown Cast Evey the Grey
+Updated Magician Stats
+Molly the Brown stats:
+HP: 250.00
+MP: 168.00
+Strength: 5
+Dexterity: 10
+Intelligence: 16
+Speed: 16
+Endurance: 5
+Faith: 8
+
+
+Updated Rogue Stats
+Evey the Grey stats:
+HP: 144.05
+MP: 0.00
+Strength: 10
+Dexterity: 16
+Intelligence: 16
+Speed: 15
+Endurance: 8
+Faith: 5
+
+
+Starting Cleric Stats
+Oscar the Orange stats:
+HP: 200.00
+MP: 200.00
+Strength: 5
+Dexterity: 10
+Intelligence: 8
+Speed: 16
+Endurance: 5
+Faith: 16
+
+
+Oscar the Orange Heal Evey the Grey
+Updated Cleric Stats
+Oscar the Orange stats:
+HP: 200.00
+MP: 184.00
+Strength: 5
+Dexterity: 10
+Intelligence: 8
+Speed: 16
+Endurance: 5
+Faith: 16
+
+
+Updated Rogue Stats
+Evey the Grey stats:
+HP: 160.05
+MP: 0.00
+Strength: 10
+Dexterity: 16
+Intelligence: 16
+Speed: 15
+Endurance: 8
+Faith: 5

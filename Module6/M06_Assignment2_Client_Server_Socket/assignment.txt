@@ -1,0 +1,15 @@
+Assignment: Client/Server Sockets
+Create a client and a server program such that the server computes and sends back to the client the color string associated with a color enum. The protocol is binary, and is as follows:
+
+Client connects and sends the enum value chosen by the user in binary form. Remember that an enum can be treated as a number.
+Server reads the enum as a number and sends back a single character string containing a format string that will change the color of the text in the console, also in binary form. The string must match exactly the string in the table below. If an invalid enum value is sent, the server should respond with an appropriate error response.
+The server closes the connection to the client.
+The server will be a single-threaded server that serializes service to its clients.
+
+The server will stay in a loop in which it accepts a connection, reads the character data sent through the connection, and sends back the character response through the same connection. After that, the server closes the connection and goes back to wait for another connection.
+
+The client should ask the user to pick a color enum using a menu, read the user input and convert to an enum value, open a connection to the server, and send the data. It should then read the reply and print it along with the name of the color from the table below to the screen.
+
+Test your server and client on your own machine by using two different terminals.
+
+Within CodeGrade, your client and server will be tested against each other. They will also be tested against the solution client and solution server. These tests will not award points on the rubric but will be used to assist grading so pay attention if they are failing.

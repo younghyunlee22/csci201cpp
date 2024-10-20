@@ -1,0 +1,13 @@
+For this assignment, you will create a date class with 3 integers for the month, day, and year. The class will have 1 parameterized constructor, the values provided must make up a valid date and the constructor will display an error message and set the values to January 1, 2000 if they don't.  The class will also have getters for the data. The setters for the class will need to validate the information given and display the error message if the value cannot be used in a valid date. Invalid year values are less than 0, invalid month values are less than 1 or greater than 12. For day, the valid/invalid values will be determined by the month and year. You will need to provide a function isLeapYear() that follows the Microsoft Leap Year algorithm (pasted below).Links to an external site.
+
+How to determine whether a year is a leap year
+To determine whether a year is a leap year, follow these steps:
+
+If the year is evenly divisible by 4, go to step 2. Otherwise, go to step 5.
+If the year is evenly divisible by 100, go to step 3. Otherwise, go to step 4.
+If the year is evenly divisible by 400, go to step 4. Otherwise, go to step 5.
+The year is a leap year (it has 366 days).
+The year is not a leap year (it has 365 days).
+Leap years have 29 days in the month of February and non-leap years have 28. You will also need to overload operators for addition, subtraction, increment, decrement, comparison, input, and output. You will have two addition operators one that allows you to add a date + integer and the other allows you to add an integer + date. The same is true for subtraction. For the increment/decrement operators, you will need to overload the pre and post increment/decrement. The input operator will read three numbers from the input stream. The month is first, the day is second, and the year is third. There should not be a prompt in the input operator. The input operator should display an error message if any of the values do not make a valid date. The output operator will output the date is ISO-8601 format yyyy-mm-dd. You will need to make sure that there are two digits for the month and day even if the value is a single digit. For the comparison operators, you will compare dates as a whole. The full list of comparison operators is in the UML diagram above.
+
+This class will be unit tested. There will be no IO tests, and you will not need to write a main program except for your own testing purposes. To ensure your class can be unit tested, the class name and all function names must match the UML diagram in spelling and case. In addition the function signatures must match the UML diagram.
